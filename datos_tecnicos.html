@@ -1,0 +1,64 @@
+<!DOCTYPE html5>
+<html lang="es">
+    <head>
+        <link rel="shortcut icon" href="img/RenaultL.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Renault R26</title>
+        <link rel="stylesheet" href="estilos/estilos_03.css">
+    </head>
+    <script type="text/javascript" 
+    src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+    </script>
+    <body alink="black" vlink="black" link="black">
+        <div class="header">
+            <div class="child">
+                <a href="https://lat.motorsport.com/team/renault-f1-team/26450/" target="_blank"><img src="img/Renault_F1.png" class="logo"></a>
+            </div>
+            <div class="child"> 
+                <div class="VL">
+                    <span class="headings"><a href="index.html">Menu principal</a></span>
+                    <span class="headings"><a href="historia.html">Historia</a></span>
+                </div>
+            </div>
+        </div>
+        <center style="padding-top:50px">
+            <div class="data" style="height:400px;">
+                <div>
+                    <br>
+                    <span id="datatext">0 KMH - 100 KMH en:</span>
+                    <div class="con">
+                        <div class="child">
+                        <p id="dynamic-number">-3</p>
+                    <script>
+                        var currentNumber = $('#dynamic-number').text();
+                        $({numberValue: currentNumber}).animate({numberValue: 1.6}, {
+                            duration: 4600,
+                            easing: 'linear',
+                            step: function (now) {
+                                $('#dynamic-number').text(now.toFixed(2)); 
+                            }
+                        });
+                    </script>
+                    </div>
+                    <div class="child">
+                        <span id="datatext" style="padding-left: 10px;">segundos</span>
+                    </div>
+                    </div>
+                </div>
+                <span id="datatext"><br>Chasis: Monocasco fabricado en fibra de carbono y estructura en panel de nido de abeja</span>
+                <span id="datatext"><br><br>Susp. delantera y trasera: Suspensión independiente, varilla de empuje activada por amortiguadores de torsión</span>
+                <span id="datatext"><br><br>Motor: Renault F1 RS26 V8 2.4L a 90 grados de asipiracion atmosferica</span>
+                <span id="datatext"><br><br>Caja de cambios: Semiautomatica</span>
+                <span id="datatext"><br><br>Neumaticos: Llantas OZ (delanteras y traseras) de 13"
+                    Neumáticos Michelin</span>
+            </div>
+        </center>
+        <div style="overflow:hidden;">
+            <div class="auto">
+                <img height="70px" src="img/f1r2603_noir.png">
+            </div>
+        </div>
+    </body>
+</html>
